@@ -1,0 +1,15 @@
+{
+  "name": "honey_bun",
+  "version": "1.0.0",
+  "description": "Honey Bun ecommerce, made with django and tailwindcss",
+  "scripts": {
+    "dev": "concurrently \"npm run watch\" \"python src/manage.py runserver\"",
+    "watch": "npx @tailwindcss/cli -i ./src/assets/input.css -o ./src/static/css/output.css --watch",
+    "build-css": "tailwindcss -i ./src/assets/input.css -o ./src/static/css/output.css",
+    "build-css-prod": "tailwindcss -i ./src/assets/input.css -o ./src/static/css/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "concurrently": "^8.2.2"
+  }
+}

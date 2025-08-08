@@ -1,3 +1,16 @@
+# Default static django
+src/static/django_components/
+src/static/admin/
+src/static/account/
+src/static/allauth_ui/
+src/static/slippers/
+src/staticfiles/
+uv.lock
+
+# Nodejs
+node_modules/
+package-lock.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -98,7 +111,8 @@ ipython_config.py
 #   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
 #   commonly ignored for libraries.
-#uv.lock
+uv.lock
+
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
